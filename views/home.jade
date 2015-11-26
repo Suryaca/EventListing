@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1 Events
+  each event in Events
+    a(style="margin-right: 7px;" href="?event=#{event}")
+      | #{category}
+  
+  a(style="display:block;" href="/add")
+    | Add

@@ -1,0 +1,9 @@
+extends ../eventlayout
+
+block content
+  h1= event.name
+  p= event.description
+  a(href="/events/#{event._id}/remove") Remove 
+  | &nbsp;
+  a(href="/events/#{blog._id}/edit") Edit
+  | &nbsp;
